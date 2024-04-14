@@ -15,8 +15,8 @@ Then, force push to sync everything for the first time:
 git push --force space main
 ```
 #### Step 2: Create GitHub Action for Synchronization
-
-Next, create a GitHub Action to automatically push your main branch to Spaces. Replace HF_USERNAME with your username and SPACE_NAME with your Space name. Also, create a GitHub secret with your Hugging Face API token. You can find your token under API Tokens on your Hugging Face profile.
+(filename : **.github/workflows/sync_to_hub.yml** )
+Next, create a GitHub Action to automatically push your main branch to Spaces. Replace HF_USERNAME with your username and SPACE_NAME with your Space name. Also, [create a GitHub secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-encrypted-secrets-for-an-environment) with your Hugging Face API token. You can find your token under API Tokens on your Hugging Face profile.
 
 ```
 name: Sync to Hugging Face hub
@@ -40,7 +40,7 @@ jobs:
 ```
 
 ### Step 3: Create Action for File Size Checking
-
+(filename : **.github/workflows/check_file_size.yml**)
 Finally, set up an Action that automatically checks the file size of any new pull request. This ensures that you stay within the file size limit of 10MB required for synchronization with HF Spaces.
 
 ```
@@ -61,3 +61,5 @@ jobs:
 ```
 
 By following these steps, you can effectively manage your Spaces with GitHub Actions, ensuring seamless synchronization and efficient development workflows.
+
+For more information, click here : [Managing Spaces with Github Actions](https://huggingface.co/docs/hub/en/spaces-github-actions)
