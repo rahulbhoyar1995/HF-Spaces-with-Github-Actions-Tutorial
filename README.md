@@ -8,7 +8,7 @@ To initiate the process, navigate to Github and create a new repository for your
 
 #### Step 2: Set up Repository and Spaces App
 
-Begin by setting up your GitHub repository and linking it with your Spaces app. Add your Spaces app as an additional remote to your existing Git repository using the command:
+Now, we will link the GitHub repository with your Spaces app. Add your Spaces app as an additional remote to your existing Git repository using the command:
 
 ```
 git remote add space https://huggingface.co/spaces/HF_USERNAME/SPACE_NAME
