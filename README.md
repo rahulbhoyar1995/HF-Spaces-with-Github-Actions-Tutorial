@@ -3,7 +3,10 @@
 
 In this tutorial, you'll learn how to use GitHub Actions to keep your application synchronized with your GitHub repository. When using Spaces, remember that files larger than 10MB require Git-LFS. If you choose not to use Git-LFS, you'll need to review your files and history. You can use tools like BFG Repo-Cleaner to remove large files from your history, ensuring smooth synchronization.
 
-#### Step 1: Set up Repository and Spaces App
+#### Step 1: Create a repo on Github
+To initiate the process, navigate to Github and create a new repository for your codebase. Ensure you provide an informative name and description for your repository. Store your code to this repository.
+
+#### Step 2: Set up Repository and Spaces App
 
 Begin by setting up your GitHub repository and linking it with your Spaces app. Add your Spaces app as an additional remote to your existing Git repository using the command:
 
