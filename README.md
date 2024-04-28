@@ -6,6 +6,7 @@ In this tutorial, you'll learn how to use GitHub Actions to keep your applicatio
 #### Step 1: Create a repo on Github
 To initiate the process, navigate to Github and create a new repository for your codebase. Ensure you provide an informative name and description for your repository. Store your code to this repository.
 
+(Note : If you have larger files, please refer this tutorial before you proceed : https://huggingface.co/docs/hub/repositories-getting-started#terminal)
 #### Step 2: Set up Repository and Spaces App
 
 Now, we will link the GitHub repository with your Spaces app. Add your Spaces app as an additional remote to your existing Git repository using the command:
