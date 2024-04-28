@@ -13,6 +13,12 @@ Now, we will link the GitHub repository with your Spaces app. Add your Spaces ap
 ```
 git remote add space https://huggingface.co/spaces/HF_USERNAME/SPACE_NAME
 ```
+Verify Remote Addition: To confirm that the "space" remote repository has been successfully added, run the command:
+```
+git remote
+```
+This command will display a list of remote repositories, including "space" if it has been added correctly.
+
 Then, force push to sync everything for the first time:
 ```
 git push --force space main
